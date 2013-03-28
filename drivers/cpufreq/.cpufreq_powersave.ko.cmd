@@ -1,0 +1,1 @@
+cmd_drivers/cpufreq/cpufreq_powersave.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/kernel_compiling/kernel/scripts/module-common.lds --build-id -o drivers/cpufreq/cpufreq_powersave.ko drivers/cpufreq/cpufreq_powersave.o drivers/cpufreq/cpufreq_powersave.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/net/tun.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/kernel_compiling/kernel/scripts/module-common.lds --build-id -o drivers/net/tun.ko drivers/net/tun.o drivers/net/tun.mod.o

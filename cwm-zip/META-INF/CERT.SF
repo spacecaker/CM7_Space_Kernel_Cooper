@@ -1,0 +1,52 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: j7VqXNfaU1vTBwc6oQJg+yVKLm0=
+
+Name: boot.img
+SHA1-Digest: r9fbGl41Y6gjvGSDM/8cVxEaATM=
+
+Name: system/lib/modules/reset_modem.ko
+SHA1-Digest: nw95CPmCgLAz6jvQWVpBhVKt8+4=
+
+Name: system/lib/modules/scsi_wait_scan.ko
+SHA1-Digest: p3fynOkZjM1mD8N+f3l0T+KeyU8=
+
+Name: system/lib/modules/lzo_compress.ko
+SHA1-Digest: cRwvHGGDJErjwNXVdPaAyNo4+nU=
+
+Name: system/lib/modules/evbug.ko
+SHA1-Digest: E95AsVTZrEAJdkzXMwKJUk5ecSQ=
+
+Name: system/lib/modules/tun.ko
+SHA1-Digest: 6DYxAQwF/5EdG7d1CfSrUy5yXck=
+
+Name: system/lib/modules/oprofile.ko
+SHA1-Digest: iawEkcECTjRbBFCrxD+Cwpqr15E=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: HwTey49s7u1HFfxB8unQcxDLXsA=
+
+Name: system/lib/modules/cifs.ko
+SHA1-Digest: ln+dOc0p8pPn50FHzwM1QycIaL0=
+
+Name: system/lib/modules/ramzswap.ko
+SHA1-Digest: T+Ha02exY7sA95oyNIwD13vPFv4=
+
+Name: system/lib/modules/librasdioif.ko
+SHA1-Digest: X00+QAVzaxsFr+Lmz/ky+QXytHQ=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: bKztNKx+a98rm866lG4IKKJ57s4=
+
+Name: system/lib/modules/dma_test.ko
+SHA1-Digest: 8kKMbINzw00PNKSDz5axaPHwh4k=
+
+Name: META-INF/com/android/metadata
+SHA1-Digest: p1lQGR4H+cwg6BqzVo6J9XraJYU=
+
+Name: system/lib/modules/cpaccess.ko
+SHA1-Digest: AE8cbD+k7scR16bMziq50+ywCvY=
+
+Name: system/lib/modules/lzo_decompress.ko
+SHA1-Digest: ParrJvTpw5SjU7pF9Vdw3lzk98k=
+

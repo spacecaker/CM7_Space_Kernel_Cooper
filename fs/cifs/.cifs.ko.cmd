@@ -1,0 +1,1 @@
+cmd_fs/cifs/cifs.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/kernel_compiling/kernel/scripts/module-common.lds --build-id -o fs/cifs/cifs.ko fs/cifs/cifs.o fs/cifs/cifs.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/ISSP/built-in.o :=  /home/robin/toolchain/bin/arm-none-eabi-ld -EL    -r -o drivers/input/touchscreen/ISSP/built-in.o drivers/input/touchscreen/ISSP/TouchUpdater.o drivers/input/touchscreen/ISSP/issp_driver_routines.o drivers/input/touchscreen/ISSP/issp_routines.o 
