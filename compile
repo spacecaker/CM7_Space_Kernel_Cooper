@@ -1,4 +1,5 @@
 #!/bin/bash
+make clean
 make spacecaker_defconfig
 make
 rm -rf output/*

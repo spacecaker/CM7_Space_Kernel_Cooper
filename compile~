@@ -5,13 +5,13 @@ rm -rf output/*
 mkdir ./output/modules
 cp ./arch/arm/boot/zImage ./output/boot.img-zImage
 find ! -path './output*' ! -path './cwm-zip*' ! -path './space-rebuild-tools*' -name "*.ko" -exec cp {} ./output/modules/ \;
-mv ./output/modules/reset_modem.ko ./blackhawk-tools/unpack/boot.img-ramdisk/lib/modules
+mv ./output/modules/reset_modem.ko ./space-rebuild-tools/unpack/boot.img-ramdisk/lib/modules
 cp ./output/boot.img-zImage ./space-rebuild-tools/unpack/boot.img-zImage
 cd space-rebuild-tools
 ./repackbootimg.sh boot.img
 
 cd ..
-cp ./blackhawk-tools/boot.img-repack ./output/boot.img
+cp ./space-rebuild-tools/boot.img-repack ./output/boot.img
 cp ./output/boot.img cwm-zip/boot.img
 rm cwm-zip/system/lib/modules/*
 cp ./output/modules/* cwm-zip/system/lib/modules
