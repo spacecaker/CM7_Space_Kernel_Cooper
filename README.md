@@ -1,7 +1,8 @@
 Space_Kernel 
+=============
    CSM7.2
 Team_Adreno
-=============
+
 
 For CyanoSpaceMod7 / CM7 based roms
 
