@@ -1,1 +1,1 @@
-cmd_drivers/input/evbug.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/kernel_compiling/kernel/scripts/module-common.lds --build-id -o drivers/input/evbug.ko drivers/input/evbug.o drivers/input/evbug.mod.o
+cmd_drivers/input/evbug.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/CM7_kernel_TA/scripts/module-common.lds --build-id -o drivers/input/evbug.ko drivers/input/evbug.o drivers/input/evbug.mod.o

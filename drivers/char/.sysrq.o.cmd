@@ -1,4 +1,4 @@
-cmd_drivers/char/sysrq.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,drivers/char/.sysrq.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/kernel_compiling/kernel/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(sysrq)"  -D"KBUILD_MODNAME=KBUILD_STR(sysrq)" -D"DEBUG_HASH=51" -D"DEBUG_HASH2=24" -c -o drivers/char/sysrq.o drivers/char/sysrq.c
+cmd_drivers/char/sysrq.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,drivers/char/.sysrq.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/CM7_kernel_TA/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(sysrq)"  -D"KBUILD_MODNAME=KBUILD_STR(sysrq)" -D"DEBUG_HASH=51" -D"DEBUG_HASH2=24" -c -o drivers/char/sysrq.o drivers/char/sysrq.c
 
 deps_drivers/char/sysrq.o := \
   drivers/char/sysrq.c \
@@ -61,7 +61,7 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/preempt.h) \
     $(wildcard include/config/cgroup/sched.h) \
     $(wildcard include/config/mm/owner.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/param.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
   include/linux/capability.h \
   include/linux/types.h \
@@ -69,9 +69,9 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/types.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/bitsperlong.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
@@ -84,7 +84,7 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/posix_types.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/posix_types.h \
   include/linux/threads.h \
     $(wildcard include/config/nr/cpus.h) \
     $(wildcard include/config/base/small.h) \
@@ -98,13 +98,13 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/ftrace/mcount/record.h) \
   /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include/stdarg.h \
   include/linux/linkage.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/linkage.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
     $(wildcard include/config/generic/find/first/bit.h) \
     $(wildcard include/config/generic/find/last/bit.h) \
     $(wildcard include/config/generic/find/next/bit.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/bitops.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/system.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/bitops.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/system.h \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
@@ -117,12 +117,12 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/irqflags.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/ptrace.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/irqflags.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/hwcap.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/outercache.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/hwcap.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   arch/arm/mach-msm/include/mach/barriers.h \
@@ -138,24 +138,24 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
   include/linux/dynamic_debug.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/byteorder.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/swab.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/bug.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/div64.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/div64.h \
   include/linux/timex.h \
   include/linux/time.h \
     $(wildcard include/config/arch/uses/gettimeoffset.h) \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/cache.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/seqlock.h \
@@ -169,12 +169,12 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/debug/preempt.h) \
     $(wildcard include/config/preempt/count/cpu.h) \
   include/linux/thread_info.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/thread_info.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/fpstate.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/domain.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/domain.h \
     $(wildcard include/config/verify/permission/fault.h) \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/emulate/domain/manager/v7.h) \
@@ -183,7 +183,7 @@ deps_drivers/char/sysrq.o := \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
   include/linux/prefetch.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/processor.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/processor.h \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
@@ -194,12 +194,12 @@ deps_drivers/char/sysrq.o := \
   include/linux/spinlock_up.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_up.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/atomic.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/atomic.h \
     $(wildcard include/config/generic/atomic64.h) \
   include/asm-generic/atomic-long.h \
   include/linux/math64.h \
   include/linux/param.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/timex.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/timex.h \
   arch/arm/mach-msm/include/mach/timex.h \
     $(wildcard include/config/arch/msm/scorpionmp.h) \
   include/linux/jiffies.h \
@@ -210,9 +210,9 @@ deps_drivers/char/sysrq.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/string.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/string.h \
   include/linux/errno.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/errno.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/nodemask.h \
@@ -226,18 +226,18 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/aio.h) \
     $(wildcard include/config/mmu/notifier.h) \
   include/linux/auxvec.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/auxvec.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/auxvec.h \
   include/linux/prio_tree.h \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/generic/spinlock.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/rwsem.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/rwsem.h \
   include/linux/completion.h \
   include/linux/wait.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/current.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/current.h \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/debug/something/else.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/page.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -247,7 +247,7 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/sparsemem.h) \
     $(wildcard include/config/memory/hotplug/sparse.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/glue.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
@@ -260,7 +260,7 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/cpu/pabrt/legacy.h) \
     $(wildcard include/config/cpu/pabrt/v6.h) \
     $(wildcard include/config/cpu/pabrt/v7.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/memory.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/dram/size.h) \
@@ -276,21 +276,21 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/cache/l2x0.h) \
     $(wildcard include/config/arch/msm/scorpion.h) \
     $(wildcard include/config/arch/msm7x27.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/sizes.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
   include/asm-generic/getorder.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/mmu.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/cputime.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/cputime.h \
   include/asm-generic/cputime.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
   include/linux/sem.h \
   include/linux/ipc.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/ipcbuf.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/sembuf.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/ipcbuf.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/sembuf.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/rcu/torture/test.h) \
     $(wildcard include/config/tree/rcu.h) \
@@ -304,10 +304,10 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/debug/objects/free.h) \
   include/linux/rcutiny.h \
   include/linux/signal.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/signal.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/signal.h \
   include/asm-generic/signal-defs.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/sigcontext.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/siginfo.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/sigcontext.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/linux/path.h \
   include/linux/pid.h \
@@ -319,7 +319,7 @@ deps_drivers/char/sysrq.o := \
   include/linux/pfn.h \
   include/linux/init.h \
     $(wildcard include/config/hotplug.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/percpu.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
@@ -354,7 +354,7 @@ deps_drivers/char/sysrq.o := \
   include/linux/notifier.h \
   include/linux/mutex.h \
   include/linux/srcu.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/topology.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/topology.h \
     $(wildcard include/config/arm/cpu/topology.h) \
   include/asm-generic/topology.h \
   include/linux/proportions.h \
@@ -367,7 +367,7 @@ deps_drivers/char/sysrq.o := \
   include/linux/plist.h \
     $(wildcard include/config/debug/pi/list.h) \
   include/linux/resource.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/resource.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/resource.h \
   include/asm-generic/resource.h \
   include/linux/timer.h \
     $(wildcard include/config/timer/stats.h) \
@@ -408,12 +408,12 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/migration.h) \
   include/linux/limits.h \
   include/linux/ioctl.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/ioctl.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/ioctl.h \
   include/asm-generic/ioctl.h \
   include/linux/kdev_t.h \
   include/linux/dcache.h \
   include/linux/stat.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/stat.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/stat.h \
   include/linux/radix-tree.h \
   include/linux/semaphore.h \
   include/linux/fiemap.h \
@@ -428,14 +428,14 @@ deps_drivers/char/sysrq.o := \
   include/linux/sunrpc/msg_prot.h \
   include/linux/inet.h \
   include/linux/fcntl.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/fcntl.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/err.h \
   include/linux/mount.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/pgtable.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
   include/asm-generic/4level-fixup.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/proc-fns.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/proc-fns.h \
     $(wildcard include/config/cpu/arm7tdmi.h) \
     $(wildcard include/config/cpu/arm720t.h) \
     $(wildcard include/config/cpu/arm740t.h) \
@@ -454,11 +454,11 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/cpu/v6.h) \
     $(wildcard include/config/cpu/v7.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/cpu-single.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/cpu-single.h \
   arch/arm/mach-msm/include/mach/vmalloc.h \
     $(wildcard include/config/vmsplit/2g.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/pgtable-hwdef.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/tlbflush.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/pgtable-hwdef.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/tlbflush.h \
     $(wildcard include/config/cpu/tlb/v3.h) \
     $(wildcard include/config/cpu/tlb/v4wt.h) \
     $(wildcard include/config/cpu/tlb/fa.h) \
@@ -479,8 +479,8 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/lock/kernel.h) \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/hardirq.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/irq.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/hardirq.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/irq.h \
   arch/arm/mach-msm/include/mach/irqs.h \
     $(wildcard include/config/arch/qsd8x50.h) \
     $(wildcard include/config/arch/msm8x60.h) \
@@ -509,15 +509,15 @@ deps_drivers/char/sysrq.o := \
   include/linux/tty.h \
   include/linux/major.h \
   include/linux/termios.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/termios.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/termbits.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/ioctls.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/termios.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/termbits.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/ioctls.h \
   include/linux/tty_driver.h \
     $(wildcard include/config/console/poll.h) \
   include/linux/cdev.h \
   include/linux/tty_ldisc.h \
   include/linux/reboot.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/emergency-restart.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/emergency-restart.h \
   include/asm-generic/emergency-restart.h \
   include/linux/sysrq.h \
     $(wildcard include/config/magic/sysrq.h) \
@@ -549,7 +549,7 @@ deps_drivers/char/sysrq.o := \
   include/linux/perf_event.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/perf/use/vmalloc.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/perf_event.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/perf_event.h \
   include/linux/pid_namespace.h \
     $(wildcard include/config/pid/ns.h) \
   include/linux/nsproxy.h \
@@ -572,15 +572,15 @@ deps_drivers/char/sysrq.o := \
   include/linux/kmod.h \
   include/linux/elf.h \
   include/linux/elf-em.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/elf.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/user.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/elf.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/user.h \
   include/linux/moduleparam.h \
     $(wildcard include/config/alpha.h) \
     $(wildcard include/config/ppc64.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/module.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/module.h \
     $(wildcard include/config/arm/unwind.h) \
   include/trace/events/module.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/ftrace.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/ftrace.h \
   include/linux/cpu.h \
     $(wildcard include/config/arch/cpu/probe/release.h) \
     $(wildcard include/config/pm/sleep/smp.h) \
@@ -590,7 +590,7 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/pm/ops.h) \
   include/linux/node.h \
     $(wildcard include/config/hugetlbfs.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/local.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/local.h \
   include/asm-generic/local.h \
   include/linux/suspend.h \
     $(wildcard include/config/vt/console.h) \
@@ -619,19 +619,19 @@ deps_drivers/char/sysrq.o := \
   include/linux/highmem.h \
     $(wildcard include/config/debug/highmem.h) \
   include/linux/uaccess.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/uaccess.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/unified.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/uaccess.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/cacheflush.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/cacheflush.h \
     $(wildcard include/config/cpu/cache/v3.h) \
     $(wildcard include/config/cpu/cache/v4.h) \
     $(wildcard include/config/cpu/cache/v4wb.h) \
     $(wildcard include/config/cpu/cache/vipt.h) \
     $(wildcard include/config/arm/errata/411920.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/shmparam.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/cachetype.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/shmparam.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/cachetype.h \
     $(wildcard include/config/cpu/cache/vivt.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/kmap_types.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/kmap_types.h \
   include/linux/vt_kern.h \
     $(wildcard include/config/vga/console.h) \
     $(wildcard include/config/console/translations.h) \
@@ -648,12 +648,12 @@ deps_drivers/char/sysrq.o := \
     $(wildcard include/config/devtmpfs.h) \
   include/linux/ioport.h \
   include/linux/klist.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/device.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
   include/linux/pm_wakeup.h \
     $(wildcard include/config/pm.h) \
   include/linux/mod_devicetable.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/irq_regs.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/irq_regs.h \
   include/asm-generic/irq_regs.h \
 
 drivers/char/sysrq.o: $(deps_drivers/char/sysrq.o)

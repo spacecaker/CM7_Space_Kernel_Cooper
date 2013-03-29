@@ -1,1 +1,1 @@
-cmd_drivers/uv/cooperuv.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/kernel_compiling/kernel/scripts/module-common.lds --build-id -o drivers/uv/cooperuv.ko drivers/uv/cooperuv.o drivers/uv/cooperuv.mod.o
+cmd_drivers/uv/cooperuv.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/CM7_kernel_TA/scripts/module-common.lds --build-id -o drivers/uv/cooperuv.ko drivers/uv/cooperuv.o drivers/uv/cooperuv.mod.o

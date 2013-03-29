@@ -1,1 +1,1 @@
-cmd_drivers/cpufreq/cpufreq_ondemandx.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/kernel_compiling/kernel/scripts/module-common.lds --build-id -o drivers/cpufreq/cpufreq_ondemandx.ko drivers/cpufreq/cpufreq_ondemandx.o drivers/cpufreq/cpufreq_ondemandx.mod.o
+cmd_drivers/cpufreq/cpufreq_ondemandx.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/CM7_kernel_TA/scripts/module-common.lds --build-id -o drivers/cpufreq/cpufreq_ondemandx.ko drivers/cpufreq/cpufreq_ondemandx.o drivers/cpufreq/cpufreq_ondemandx.mod.o

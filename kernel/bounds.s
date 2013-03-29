@@ -14,8 +14,8 @@
 @	compiled by GNU C version 4.3.2, GMP version 4.3.2, MPFR version 3.0.1-p4, MPC version 0.9
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc
-@ -I /home/robin/android/kernel_compiling/kernel/arch/arm/include
-@ -I include -I arch/arm/mach-msm/include
+@ -I /home/robin/android/CM7_kernel_TA/arch/arm/include -I include
+@ -I arch/arm/mach-msm/include
 @ -iprefix /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/
 @ -isysroot /home/robin/toolchain/bin/../arm-none-eabi -D__USES_INITFINI__
 @ -D __KERNEL__ -D __LINUX_ARM_ARCH__=6 -U arm -D KBUILD_STR(s)=#s

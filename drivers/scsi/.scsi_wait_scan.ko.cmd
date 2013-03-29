@@ -1,1 +1,1 @@
-cmd_drivers/scsi/scsi_wait_scan.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/kernel_compiling/kernel/scripts/module-common.lds --build-id -o drivers/scsi/scsi_wait_scan.ko drivers/scsi/scsi_wait_scan.o drivers/scsi/scsi_wait_scan.mod.o
+cmd_drivers/scsi/scsi_wait_scan.ko := /home/robin/toolchain/bin/arm-none-eabi-ld -EL -r  -T /home/robin/android/CM7_kernel_TA/scripts/module-common.lds --build-id -o drivers/scsi/scsi_wait_scan.ko drivers/scsi/scsi_wait_scan.o drivers/scsi/scsi_wait_scan.mod.o

@@ -1,4 +1,4 @@
-cmd_arch/arm/mach-msm/gpiomux-v1.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,arch/arm/mach-msm/.gpiomux-v1.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/kernel_compiling/kernel/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(gpiomux_v1)"  -D"KBUILD_MODNAME=KBUILD_STR(gpiomux_v1)" -D"DEBUG_HASH=49" -D"DEBUG_HASH2=22" -c -o arch/arm/mach-msm/gpiomux-v1.o arch/arm/mach-msm/gpiomux-v1.c
+cmd_arch/arm/mach-msm/gpiomux-v1.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,arch/arm/mach-msm/.gpiomux-v1.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/CM7_kernel_TA/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(gpiomux_v1)"  -D"KBUILD_MODNAME=KBUILD_STR(gpiomux_v1)" -D"DEBUG_HASH=49" -D"DEBUG_HASH2=22" -c -o arch/arm/mach-msm/gpiomux-v1.o arch/arm/mach-msm/gpiomux-v1.c
 
 deps_arch/arm/mach-msm/gpiomux-v1.o := \
   arch/arm/mach-msm/gpiomux-v1.c \
@@ -7,12 +7,12 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
     $(wildcard include/config/generic/find/first/bit.h) \
     $(wildcard include/config/generic/find/last/bit.h) \
     $(wildcard include/config/generic/find/next/bit.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/types.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/bitsperlong.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
     $(wildcard include/config/64bit.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/bitops.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/bitops.h \
     $(wildcard include/config/smp.h) \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
@@ -23,7 +23,7 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/system.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/system.h \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
@@ -32,19 +32,19 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/32v6k.h) \
   include/linux/linkage.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/linkage.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/linkage.h \
   include/linux/irqflags.h \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/irqflags.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/ptrace.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/irqflags.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/hwcap.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/outercache.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/hwcap.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   arch/arm/mach-msm/include/mach/barriers.h \
@@ -55,7 +55,7 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
     $(wildcard include/config/phys/addr/t/64bit.h) \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/posix_types.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/posix_types.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
@@ -78,23 +78,23 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
   include/linux/dynamic_debug.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/byteorder.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/swab.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/bug.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/div64.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/div64.h \
   include/linux/io.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/has/ioport.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/io.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/memory.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/io.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/highmem.h) \
@@ -113,12 +113,12 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
     $(wildcard include/config/arch/msm/scorpion.h) \
     $(wildcard include/config/arch/msm/scorpionmp.h) \
     $(wildcard include/config/arch/msm7x27.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/sizes.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
   arch/arm/mach-msm/include/mach/io.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/page.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -127,7 +127,7 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/memory/hotplug/sparse.h) \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/glue.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
@@ -144,7 +144,7 @@ deps_arch/arm/mach-msm/gpiomux-v1.o := \
   arch/arm/mach-msm/gpiomux.h \
     $(wildcard include/config/msm/gpiomux.h) \
   include/linux/errno.h \
-  /home/robin/android/kernel_compiling/kernel/arch/arm/include/asm/errno.h \
+  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   arch/arm/mach-msm/proc_comm.h \

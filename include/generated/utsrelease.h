@@ -1,1 +1,1 @@
-#define UTS_RELEASE "2.6.35.14-Spacekernel-27.03.13"
+#define UTS_RELEASE "3.0.8.14-Spacekernel-29.03.13"
