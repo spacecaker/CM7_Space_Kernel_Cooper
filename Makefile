@@ -193,8 +193,8 @@ export KBUILD_BUILD_VERSION:=Space-Kernel
 #CROSS_COMPILE	?=
 #CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 ARCH            =arm
-#CROSS_COMPILE   =../../toolchain/arm-eabi-4.4.3/bin/arm-eabi-
-CROSS_COMPILE   =/home/robin/toolchain/bin/arm-none-eabi-
+#CROSS_COMPILE   =../../codekernel/cs/arm-none-eabi-
+CROSS_COMPILE   =../../codekernel/cs/bin/arm-none-eabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)

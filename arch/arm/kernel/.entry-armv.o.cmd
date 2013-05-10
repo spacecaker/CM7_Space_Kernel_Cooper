@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/entry-armv.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/CM7_kernel_TA/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -include asm/unified.h -mfpu=vfp -mtune=arm1136jf-s       -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
+cmd_arch/arm/kernel/entry-armv.o := ../../codekernel/cs/bin/arm-none-eabi-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /home/robin/codekernel/cs/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/androidkernel/kernel/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -include asm/unified.h -mfpu=vfp -mtune=arm1136jf-s       -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
 
 deps_arch/arm/kernel/entry-armv.o := \
   arch/arm/kernel/entry-armv.S \
@@ -22,9 +22,9 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/tls/reg/emul.h) \
     $(wildcard include/config/emulate/domain/manager/v7.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/unified.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/memory.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/dram/size.h) \
@@ -47,11 +47,11 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/arch/msm/scorpion.h) \
     $(wildcard include/config/arch/msm/scorpionmp.h) \
     $(wildcard include/config/arch/msm7x27.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/sizes.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/glue.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
     $(wildcard include/config/cpu/abrt/ev4.h) \
     $(wildcard include/config/cpu/abrt/ev4t.h) \
@@ -62,9 +62,9 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/cpu/pabrt/legacy.h) \
     $(wildcard include/config/cpu/pabrt/v6.h) \
     $(wildcard include/config/cpu/pabrt/v7.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/vfpmacros.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/vfpmacros.h \
     $(wildcard include/config/vfpv3.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/vfp.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/vfp.h \
   arch/arm/mach-msm/include/mach/entry-macro.S \
     $(wildcard include/config/msm/vic.h) \
     $(wildcard include/config/arm/gic.h) \
@@ -74,10 +74,10 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/arch/msm8x60.h) \
   arch/arm/mach-msm/include/mach/msm_iomap-7xxx.h \
     $(wildcard include/config/msm/debug/uart.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/thread_notify.h \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/unwind.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/thread_notify.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/unwind.h \
     $(wildcard include/config/arm/unwind.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/unistd.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/unistd.h \
     $(wildcard include/config/oabi/compat.h) \
   arch/arm/kernel/entry-header.S \
     $(wildcard include/config/frame/pointer.h) \
@@ -88,19 +88,19 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/linkage.h \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/linkage.h \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/assembler.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/linkage.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/ptrace.h \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/hwcap.h \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/asm-offsets.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/ptrace.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/hwcap.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/asm-offsets.h \
   include/generated/asm-offsets.h \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/errno.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/thread_info.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/fpstate.h \
+  /home/robin/androidkernel/kernel/arch/arm/include/asm/fpstate.h \
 
 arch/arm/kernel/entry-armv.o: $(deps_arch/arm/kernel/entry-armv.o)
 
