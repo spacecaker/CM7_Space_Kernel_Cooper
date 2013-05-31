@@ -1,7 +1,7 @@
-cmd_net/netfilter/xt_RATEEST.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,net/netfilter/.xt_RATEEST.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/CM7_kernel_TA/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(xt_RATEEST)"  -D"KBUILD_MODNAME=KBUILD_STR(xt_RATEEST)" -D"DEBUG_HASH=11" -D"DEBUG_HASH2=17" -c -o net/netfilter/xt_RATEEST.o net/netfilter/xt_RATEEST.c
+cmd_net/netfilter/xt_rateest.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,net/netfilter/.xt_rateest.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/CM7_kernel_TA/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(xt_rateest)"  -D"KBUILD_MODNAME=KBUILD_STR(xt_rateest)" -D"DEBUG_HASH=43" -D"DEBUG_HASH2=47" -c -o net/netfilter/xt_rateest.o net/netfilter/xt_rateest.c
 
-deps_net/netfilter/xt_RATEEST.o := \
-  net/netfilter/xt_RATEEST.c \
+deps_net/netfilter/xt_rateest.o := \
+  net/netfilter/xt_rateest.c \
   include/linux/module.h \
     $(wildcard include/config/symbol/prefix.h) \
     $(wildcard include/config/modules.h) \
@@ -582,16 +582,6 @@ deps_net/netfilter/xt_RATEEST.o := \
   include/asm-generic/dma-coherent.h \
     $(wildcard include/config/have/generic/dma/coherent.h) \
   include/linux/gen_stats.h \
-  include/linux/jhash.h \
-  include/linux/unaligned/packed_struct.h \
-  include/linux/rtnetlink.h \
-  include/linux/netlink.h \
-  include/linux/if_link.h \
-  include/linux/if_addr.h \
-  include/linux/neighbour.h \
-  include/net/gen_stats.h \
-  include/linux/pkt_sched.h \
-  include/net/netlink.h \
   include/linux/netfilter/x_tables.h \
   include/linux/netdevice.h \
     $(wildcard include/config/dcb.h) \
@@ -617,6 +607,8 @@ deps_net/netfilter/xt_RATEEST.o := \
   include/linux/hdlc/ioctl.h \
   include/linux/if_ether.h \
   include/linux/if_packet.h \
+  include/linux/if_link.h \
+  include/linux/netlink.h \
   include/linux/pm_qos_params.h \
   include/linux/miscdevice.h \
   include/linux/major.h \
@@ -681,9 +673,9 @@ deps_net/netfilter/xt_RATEEST.o := \
   arch/arm/mach-msm/include/mach/irqs-7xxx.h \
   include/linux/irq_cpustat.h \
   include/linux/netfilter_ipv4.h \
-  include/linux/netfilter/xt_RATEEST.h \
+  include/linux/netfilter/xt_rateest.h \
   include/net/netfilter/xt_rateest.h \
 
-net/netfilter/xt_RATEEST.o: $(deps_net/netfilter/xt_RATEEST.o)
+net/netfilter/xt_rateest.o: $(deps_net/netfilter/xt_rateest.o)
 
-$(deps_net/netfilter/xt_RATEEST.o):
+$(deps_net/netfilter/xt_rateest.o):

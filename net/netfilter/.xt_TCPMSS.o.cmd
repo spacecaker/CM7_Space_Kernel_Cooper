@@ -1,8 +1,7 @@
-cmd_net/netfilter/xt_TCPMSS.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,net/netfilter/.xt_TCPMSS.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/CM7_kernel_TA/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(xt_TCPMSS)"  -D"KBUILD_MODNAME=KBUILD_STR(xt_TCPMSS)" -D"DEBUG_HASH=45" -D"DEBUG_HASH2=39" -c -o net/netfilter/xt_TCPMSS.o net/netfilter/xt_TCPMSS.c
+cmd_net/netfilter/xt_tcpmss.o := /home/robin/toolchain/bin/arm-none-eabi-gcc -Wp,-MD,net/netfilter/.xt_tcpmss.o.d  -nostdinc -isystem /home/robin/toolchain/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/android/CM7_kernel_TA/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(xt_tcpmss)"  -D"KBUILD_MODNAME=KBUILD_STR(xt_tcpmss)" -D"DEBUG_HASH=45" -D"DEBUG_HASH2=63" -c -o net/netfilter/xt_tcpmss.o net/netfilter/xt_tcpmss.c
 
-deps_net/netfilter/xt_TCPMSS.o := \
-  net/netfilter/xt_TCPMSS.c \
-    $(wildcard include/config/ip6/nf/iptables.h) \
+deps_net/netfilter/xt_tcpmss.o := \
+  net/netfilter/xt_tcpmss.c \
   include/linux/module.h \
     $(wildcard include/config/symbol/prefix.h) \
     $(wildcard include/config/modules.h) \
@@ -582,17 +581,14 @@ deps_net/netfilter/xt_TCPMSS.o := \
   /home/robin/android/CM7_kernel_TA/arch/arm/include/asm/dma-mapping.h \
   include/asm-generic/dma-coherent.h \
     $(wildcard include/config/have/generic/dma/coherent.h) \
-  include/linux/ip.h \
-  include/linux/ipv6.h \
-    $(wildcard include/config/ipv6/privacy.h) \
-    $(wildcard include/config/ipv6/router/pref.h) \
-    $(wildcard include/config/ipv6/route/info.h) \
-    $(wildcard include/config/ipv6/optimistic/dad.h) \
-    $(wildcard include/config/ipv6/mroute.h) \
-    $(wildcard include/config/ipv6/mip6.h) \
-    $(wildcard include/config/ipv6/subtrees.h) \
+  include/net/tcp.h \
     $(wildcard include/config/ipv6.h) \
-  include/linux/icmpv6.h \
+    $(wildcard include/config/tcp/md5sig.h) \
+  include/linux/tcp.h \
+  include/net/sock.h \
+    $(wildcard include/config/net/ns.h) \
+    $(wildcard include/config/rps.h) \
+  include/linux/list_nulls.h \
   include/linux/netdevice.h \
     $(wildcard include/config/dcb.h) \
     $(wildcard include/config/wlan.h) \
@@ -604,12 +600,10 @@ deps_net/netfilter/xt_TCPMSS.o := \
     $(wildcard include/config/ipv6/sit.h) \
     $(wildcard include/config/ipv6/tunnel.h) \
     $(wildcard include/config/netpoll.h) \
-    $(wildcard include/config/rps.h) \
     $(wildcard include/config/net/poll/controller.h) \
     $(wildcard include/config/fcoe.h) \
     $(wildcard include/config/wireless/ext.h) \
     $(wildcard include/config/net/dsa.h) \
-    $(wildcard include/config/net/ns.h) \
     $(wildcard include/config/net/dsa/tag/dsa.h) \
     $(wildcard include/config/net/dsa/tag/trailer.h) \
     $(wildcard include/config/netpoll/trap.h) \
@@ -644,6 +638,7 @@ deps_net/netfilter/xt_TCPMSS.o := \
   include/net/inet_frag.h \
   include/net/netns/ipv6.h \
     $(wildcard include/config/ipv6/multiple/tables.h) \
+    $(wildcard include/config/ipv6/mroute.h) \
     $(wildcard include/config/ipv6/mroute/multiple/tables.h) \
   include/net/dst_ops.h \
   include/net/netns/dccp.h \
@@ -659,7 +654,6 @@ deps_net/netfilter/xt_TCPMSS.o := \
     $(wildcard include/config/proc/kcore.h) \
   include/linux/magic.h \
   include/net/netns/conntrack.h \
-  include/linux/list_nulls.h \
   include/net/netns/xfrm.h \
   include/linux/xfrm.h \
   include/linux/seq_file_net.h \
@@ -680,9 +674,6 @@ deps_net/netfilter/xt_TCPMSS.o := \
     $(wildcard include/config/arch/msm8x60.h) \
   arch/arm/mach-msm/include/mach/irqs-7xxx.h \
   include/linux/irq_cpustat.h \
-  include/linux/tcp.h \
-    $(wildcard include/config/tcp/md5sig.h) \
-  include/net/sock.h \
   include/linux/security.h \
     $(wildcard include/config/security/path.h) \
     $(wildcard include/config/security/network.h) \
@@ -716,32 +707,37 @@ deps_net/netfilter/xt_TCPMSS.o := \
   include/net/inet_timewait_sock.h \
   include/net/tcp_states.h \
   include/net/timewait_sock.h \
-  include/linux/udp.h \
-  include/net/ipv6.h \
-  include/net/if_inet6.h \
-  include/net/ndisc.h \
-  include/net/route.h \
-  include/net/inetpeer.h \
-  include/linux/in_route.h \
-  include/linux/route.h \
-  include/net/tcp.h \
   include/linux/crypto.h \
   include/linux/uaccess.h \
   include/linux/cryptohash.h \
   include/net/inet_hashtables.h \
+  include/linux/ip.h \
+  include/linux/ipv6.h \
+    $(wildcard include/config/ipv6/privacy.h) \
+    $(wildcard include/config/ipv6/router/pref.h) \
+    $(wildcard include/config/ipv6/route/info.h) \
+    $(wildcard include/config/ipv6/optimistic/dad.h) \
+    $(wildcard include/config/ipv6/mip6.h) \
+    $(wildcard include/config/ipv6/subtrees.h) \
+  include/linux/icmpv6.h \
+  include/linux/udp.h \
   include/linux/vmalloc.h \
+  include/net/route.h \
+  include/net/inetpeer.h \
+  include/linux/in_route.h \
+  include/linux/route.h \
   include/net/ip.h \
     $(wildcard include/config/inet.h) \
   include/net/inet_ecn.h \
   include/net/dsfield.h \
-  include/linux/netfilter_ipv4/ip_tables.h \
-  include/linux/netfilter_ipv4.h \
+  include/linux/netfilter/xt_tcpmss.h \
   include/linux/netfilter/x_tables.h \
+  include/linux/netfilter_ipv4.h \
+  include/linux/netfilter_ipv4/ip_tables.h \
   include/linux/netfilter/xt_tcpudp.h \
   include/linux/netfilter_ipv6/ip6_tables.h \
   include/linux/netfilter_ipv6.h \
-  include/linux/netfilter/xt_TCPMSS.h \
 
-net/netfilter/xt_TCPMSS.o: $(deps_net/netfilter/xt_TCPMSS.o)
+net/netfilter/xt_tcpmss.o: $(deps_net/netfilter/xt_tcpmss.o)
 
-$(deps_net/netfilter/xt_TCPMSS.o):
+$(deps_net/netfilter/xt_tcpmss.o):
