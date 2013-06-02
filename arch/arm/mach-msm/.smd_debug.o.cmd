@@ -1,4 +1,4 @@
-cmd_arch/arm/mach-msm/smd_debug.o := ../../codekernel/cs/bin/arm-none-eabi-gcc -Wp,-MD,arch/arm/mach-msm/.smd_debug.o.d  -nostdinc -isystem /home/robin/codekernel/cs/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/androidkernel/kernel/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(smd_debug)"  -D"KBUILD_MODNAME=KBUILD_STR(smd_debug)" -D"DEBUG_HASH=30" -D"DEBUG_HASH2=62" -c -o arch/arm/mach-msm/smd_debug.o arch/arm/mach-msm/smd_debug.c
+cmd_arch/arm/mach-msm/smd_debug.o := ../../CodeSourcery/CodeSourcery/bin/arm-none-eabi-gcc -Wp,-MD,arch/arm/mach-msm/.smd_debug.o.d  -nostdinc -isystem /home/robin/CodeSourcery/CodeSourcery/bin/../lib/gcc/arm-none-eabi/4.6.1/include -I/home/robin/Kernel/kernel/arch/arm/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-msm/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wno-format-security -fno-delete-null-pointer-checks -O3 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=6 -march=armv6k -mtune=arm1136j-s -mfpu=vfp -mtune=arm1136jf-s -Uarm -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(smd_debug)"  -D"KBUILD_MODNAME=KBUILD_STR(smd_debug)" -D"DEBUG_HASH=30" -D"DEBUG_HASH2=62" -c -o arch/arm/mach-msm/smd_debug.o arch/arm/mach-msm/smd_debug.c
 
 deps_arch/arm/mach-msm/smd_debug.o := \
   arch/arm/mach-msm/smd_debug.c \
@@ -23,7 +23,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/migration.h) \
   include/linux/limits.h \
   include/linux/ioctl.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/ioctl.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/ioctl.h \
   include/asm-generic/ioctl.h \
   include/linux/linkage.h \
   include/linux/compiler.h \
@@ -35,7 +35,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/linkage.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/linkage.h \
   include/linux/wait.h \
     $(wildcard include/config/lockdep.h) \
   include/linux/list.h \
@@ -49,22 +49,22 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/types.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/bitsperlong.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/posix_types.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/processor.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/posix_types.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/processor.h \
     $(wildcard include/config/mmu.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/ptrace.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/hwcap.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/cache.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/hwcap.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/system.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/system.h \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
@@ -78,8 +78,8 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/irqflags.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/outercache.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/irqflags.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   arch/arm/mach-msm/include/mach/barriers.h \
@@ -100,7 +100,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/generic/find/first/bit.h) \
     $(wildcard include/config/generic/find/last/bit.h) \
     $(wildcard include/config/generic/find/next/bit.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/bitops.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/bitops.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
@@ -108,12 +108,12 @@ deps_arch/arm/mach-msm/smd_debug.o := \
   include/asm-generic/bitops/arch_hweight.h \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/thread_info.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/fpstate.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/domain.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/verify/permission/fault.h) \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/emulate/domain/manager/v7.h) \
@@ -127,23 +127,23 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/numa.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/robin/codekernel/cs/bin/../lib/gcc/arm-none-eabi/4.6.1/include/stdarg.h \
+  /home/robin/CodeSourcery/CodeSourcery/bin/../lib/gcc/arm-none-eabi/4.6.1/include/stdarg.h \
   include/linux/log2.h \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
   include/linux/dynamic_debug.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/byteorder.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/swab.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/bug.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/div64.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/div64.h \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
@@ -156,10 +156,10 @@ deps_arch/arm/mach-msm/smd_debug.o := \
   include/linux/spinlock_up.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_up.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/atomic.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/atomic.h \
     $(wildcard include/config/generic/atomic64.h) \
   include/asm-generic/atomic-long.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/current.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/current.h \
   include/linux/kdev_t.h \
   include/linux/dcache.h \
   include/linux/rculist.h \
@@ -187,7 +187,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/string.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/string.h \
   include/linux/seqlock.h \
   include/linux/completion.h \
   include/linux/debugobjects.h \
@@ -196,7 +196,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
   include/linux/rcutiny.h \
   include/linux/path.h \
   include/linux/stat.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/stat.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/stat.h \
   include/linux/time.h \
     $(wildcard include/config/arch/uses/gettimeoffset.h) \
   include/linux/math64.h \
@@ -204,7 +204,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/hotplug.h) \
   include/linux/sysfs.h \
   include/linux/errno.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/errno.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/kref.h \
@@ -222,7 +222,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/quota/netlink/interface.h) \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/generic/spinlock.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/rwsem.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/rwsem.h \
   include/linux/percpu_counter.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
@@ -231,7 +231,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
     $(wildcard include/config/have/setup/per/cpu/area.h) \
   include/linux/pfn.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/percpu.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
@@ -244,7 +244,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
   include/linux/sunrpc/msg_prot.h \
   include/linux/inet.h \
   include/linux/fcntl.h \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/fcntl.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/err.h \
   include/linux/ctype.h \
@@ -252,7 +252,7 @@ deps_arch/arm/mach-msm/smd_debug.o := \
     $(wildcard include/config/arch/msm7x30.h) \
     $(wildcard include/config/arch/qsd8x50.h) \
     $(wildcard include/config/arch/msm8x60.h) \
-  /home/robin/androidkernel/kernel/arch/arm/include/asm/sizes.h \
+  /home/robin/Kernel/kernel/arch/arm/include/asm/sizes.h \
   arch/arm/mach-msm/include/mach/msm_iomap-7xxx.h \
     $(wildcard include/config/msm/debug/uart.h) \
   arch/arm/mach-msm/smd_private.h \
