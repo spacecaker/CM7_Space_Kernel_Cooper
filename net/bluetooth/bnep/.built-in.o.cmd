@@ -1,1 +1,1 @@
-cmd_net/bluetooth/bnep/built-in.o :=  /home/robin/toolchain/bin/arm-none-eabi-ld -EL    -r -o net/bluetooth/bnep/built-in.o net/bluetooth/bnep/bnep.o 
+cmd_net/bluetooth/bnep/built-in.o :=  ../../CodeSourcery/CodeSourcery/bin/arm-none-eabi-ld -EL    -r -o net/bluetooth/bnep/built-in.o net/bluetooth/bnep/bnep.o 

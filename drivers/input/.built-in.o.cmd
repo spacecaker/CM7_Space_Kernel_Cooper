@@ -1,1 +1,1 @@
-cmd_drivers/input/built-in.o :=  /home/robin/toolchain/bin/arm-none-eabi-ld -EL    -r -o drivers/input/built-in.o drivers/input/input-core.o drivers/input/evdev.o drivers/input/touchscreen/built-in.o drivers/input/misc/built-in.o 
+cmd_drivers/input/built-in.o :=  ../../CodeSourcery/CodeSourcery/bin/arm-none-eabi-ld -EL    -r -o drivers/input/built-in.o drivers/input/input-core.o drivers/input/evdev.o drivers/input/touchscreen/built-in.o drivers/input/misc/built-in.o 

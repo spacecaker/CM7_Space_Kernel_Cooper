@@ -1,1 +1,1 @@
-cmd_drivers/base/power/built-in.o :=  /home/robin/toolchain/bin/arm-none-eabi-ld -EL    -r -o drivers/base/power/built-in.o drivers/base/power/sysfs.o drivers/base/power/main.o drivers/base/power/generic_ops.o 
+cmd_drivers/base/power/built-in.o :=  ../../CodeSourcery/CodeSourcery/bin/arm-none-eabi-ld -EL    -r -o drivers/base/power/built-in.o drivers/base/power/sysfs.o drivers/base/power/main.o drivers/base/power/generic_ops.o 

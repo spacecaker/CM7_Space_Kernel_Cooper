@@ -1,1 +1,1 @@
-cmd_drivers/video/backlight/built-in.o :=  /home/robin/toolchain/bin/arm-none-eabi-ld -EL    -r -o drivers/video/backlight/built-in.o drivers/video/backlight/lcd.o drivers/video/backlight/backlight.o drivers/video/backlight/generic_bl.o 
+cmd_drivers/video/backlight/built-in.o :=  ../../CodeSourcery/CodeSourcery/bin/arm-none-eabi-ld -EL    -r -o drivers/video/backlight/built-in.o drivers/video/backlight/lcd.o drivers/video/backlight/backlight.o drivers/video/backlight/generic_bl.o 
