@@ -1,9 +1,0 @@
-/* This file is auto generated, version 1 */
-/*  PREEMPT */
-#define UTS_MACHINE "arm"
-#define UTS_VERSION "#1 PREEMPT Tue Mar 26 20:05:49 CET 2013"
-#define LINUX_COMPILE_TIME "20:05:49"
-#define LINUX_COMPILE_BY "dragonn"
-#define LINUX_COMPILE_HOST "arch"
-#define LINUX_COMPILE_DOMAIN "(none)"
-#define LINUX_COMPILER "gcc version 4.6.1 (Sourcery CodeBench Lite 2011.09-69) "
